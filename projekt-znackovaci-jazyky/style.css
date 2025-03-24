@@ -1,0 +1,171 @@
+/* Reset a základní nastavení */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f2f2f2; /* jemně šedé pozadí */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Fixní horní navigace s mírným průhledným pozadím */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(240, 240, 240, 0.95); /* světle šedé */
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  header h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #006494; /* akcentní modrá */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #004c7e;
+  }
+  
+  /* Přidání dostatečného prostoru kvůli fixnímu headeru */
+  main {
+    margin-top: 120px;
+    padding: 0 20px;
+  }
+  
+  /* Moderní sekce obsahu s jemným pozadím */
+  section {
+    margin: 40px 0;
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  /* Styl pro články uvnitř sekcí */
+  article {
+    margin: 30px 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #006494;
+  }
+  
+  article p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Moderní aside box s lehkým modrým nádechem */
+  aside {
+    background: #e0f7fa;
+    padding: 30px;
+    margin: 40px 0;
+    border-left: 4px solid #0077c2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Patička s minimalistickým designem a tmavším pozadím */
+  footer {
+    background: #222;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+    color: #eee;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  footer ul li {
+    margin: 0 15px;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  footer ul li a:hover {
+    color: #ffffff;
+  }
+  
+  address {
+    font-style: normal;
+    font-size: 0.9em;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  
+  /* Jemné stíny a přechody pro sekce, články a aside */
+  section, article, aside, footer {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover, article:hover, aside:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsivní úpravy */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
